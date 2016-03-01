@@ -257,7 +257,7 @@
 
 .trendy {
   @extend .row3;
-  min-height: 30vh !important;
+  min-height: 20vh !important;
   background-color: $prim-color !important;
   width: 100%;
   margin: 0 auto !important;
@@ -269,12 +269,18 @@
 
   @include desktop__large {
     width: 72%;
+    margin-bottom: -50px !important;
   }
 
   h3 {
     color: white !important;
-    font-size: $mlg;
+    font-size: 1.2rem;
+    margin: 0 !important;
     padding: 0 $sm;
+
+    @include tablet {
+      font-size: 2.8rem;
+    }
   }
 
   a {
@@ -289,8 +295,6 @@
     }
   }
 }
-
-
 
 // FOOTER ============================
 
