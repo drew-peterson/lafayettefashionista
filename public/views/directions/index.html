@@ -40,11 +40,10 @@
 <!-- IMAGES -->
     <h1 style="padding-top: 0;">Images</h1>
 
-    <section class="cardContainer scrollEvent"
-    ng-class="{trigger: curPos >= sEvent.directions.imgs}">
+    <section class="cardContainer">
 
     <!-- card directive... -->
-      <div card-inner ng-repeat="card in directionImages"></div>
+      <div lazy-load card-inner ng-repeat="card in directionImages"></div>
 
     </section>
 
