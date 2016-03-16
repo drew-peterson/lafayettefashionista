@@ -186,11 +186,17 @@
 } // end of col-2
 
 .col-3{
-  margin-top: -$lg;
+  margin-bottom: 10px;;
   padding: $med;
   width: 100%;
   background: $google-gray;
   color: $gray;
+
+  span {
+    font-size: $mlg;
+    color: $prim-color;
+    padding-right: 10px;
+  }
 
   @include tablet {
     p {
