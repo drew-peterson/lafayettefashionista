@@ -207,7 +207,7 @@
   width: 100%;
   background: $google-gray;
   color: $gray;
-  height: 100%;
+  height: auto;
 
   display: flex;
 
@@ -216,6 +216,7 @@
     font-size: $mlg;
     color: $green;
     padding-right: 10px;
+    margin-right: 1rem;
   }
 
   p {
