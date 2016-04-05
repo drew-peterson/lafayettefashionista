@@ -89,7 +89,8 @@ var paths = {
   styles: 'public/css/application.css',
   html: 'public/index.html',
   images: 'public/img/**',
-  extra: ['public/favicon.ico', 'public/sitemap.xml']
+  extra: ['public/favicon.ico', 'public/sitemap.xml'],
+  maps: ['public/css/application.css.map', 'public/js/application.js.map', 'public/libs/angular/angular.min.js.map', 'public/libs/angular-animate/angular-animate.min.js.map']
 };
 
 gulp.task('imageMin', function(){
@@ -116,7 +117,11 @@ gulp.task('build', ['compileSass', 'minifyScripts', 'imageMin', 'minifyHtml'],fu
     paths.styles,
     paths.html,
     paths.extra[0],
-    paths.extra[1]
+    paths.extra[1],
+    paths.maps[0],
+    paths.maps[1],
+    paths.maps[2],
+    paths.maps[3],
     ],{base: './'})
 
   // return gulp.src(['public/css/application.css', 'public/js/application.min.js', 'public/index.html'], { base: './'} ) // based tells gulp to preserve the directory structure in the current ('./') directory

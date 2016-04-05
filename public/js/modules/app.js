@@ -67,7 +67,6 @@ angular.module('fasionistaApp',
         // load Images =================
         var loadImage = function(){
             $(elem).fadeIn();
-            console.log('loading image');
             loaded = true;
         }
 
