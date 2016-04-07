@@ -12,7 +12,7 @@ small local consignment store made with Anguar.js, Express.js, Node.js
 ###### Please Note: Client not willing to upgrade server. Slow intial load due to running free heroku server.
 
 
-** This is my first angular website, and second Website developed.
+** This is my first angular website, and second Website developed. This was a good learning experience, I left many comments so I can look back and understand what I was doing.
 
 
 
