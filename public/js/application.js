@@ -84,6 +84,15 @@ angular.module('fasionistaApp')
   }; // end of return
 }); // end of directive
 
+angular.module('fasionistaApp')
+.directive('pressLinks', function(){
+	return {
+		replace: true,
+		restrict: 'E',
+		link: function(scope,elem,attrs){},
+		templateUrl: 'views/partials/pressLinks.html'
+	};
+});
 angular.module('MainCtrl', [])
 
 .controller('MainCtrl',function(

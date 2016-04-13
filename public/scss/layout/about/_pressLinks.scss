@@ -1,0 +1,31 @@
+.pressModal {
+	@include debug;
+}
+
+.pressModal h2  {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: $med; 
+}
+
+.pressModal .pressLinks {
+	width: 100%;
+}
+.pressModal .pressLinks a {
+	border: none !important;
+	background-color: darken($prim-color, 10%) !important;
+	width: 100% !important;
+	margin: 0 !important;
+	transition: 0.35s all ease !important;
+
+	& + a {
+		margin-top: $msm !important;
+	}
+
+	&:hover {
+		@include desktop {
+			background-color: darken($prim-color, 30%) !important;
+			color: $white !important; 
+		}
+	}
+}
