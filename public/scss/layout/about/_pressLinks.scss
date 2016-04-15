@@ -1,25 +1,65 @@
 .pressModal {
-	@include debug;
+	width: 100% !important;
+	background-color: $prim-color;
+
+	@include tablet {
+		@include box-shadow;
+		background-color: $google-gray;
+		padding: $med;
+	}
 }
 
-.pressModal h2  {
+.pressModal h2  { 
 	font-size: 1.5rem;
 	text-align: center;
-	margin-bottom: $med; 
+	padding: $msm;
+	color: $white;
+
+	@include tablet {
+		font-size: 2rem;
+		color: $prim-color;
+	} 
 }
 
 .pressModal .pressLinks {
-	width: 100%;
+	padding: $msm;
+	padding-bottom: $med;
+	width: 100% !important;
+	margin: 0 auto;
+
+	@include tablet {
+		width: 95% !important;
+	}
+
+	@include desktop {
+		width: 90% !important;	
+	}
 }
 .pressModal .pressLinks a {
+	position: relative;
+	margin: 0 !important;
+	left: 50%;
+	transform: translateX(-50%);
 	border: none !important;
 	background-color: darken($prim-color, 10%) !important;
-	width: 100% !important;
-	margin: 0 !important;
+	width: 70% ;
+
 	transition: 0.35s all ease !important;
+
+	@include tablet {
+		width: 49% !important;
+		font-size: 1.3rem !important;
+		transform: translateX(0);
+		left: 0;
+		padding: $med $msm !important;
+		font-size: 1.2rem !important;
+	} 
 
 	& + a {
 		margin-top: $msm !important;
+		@include tablet {
+			margin-left: $msm !important;
+		}
 	}
 
 	&:hover {
@@ -28,4 +68,5 @@
 			color: $white !important; 
 		}
 	}
+
 }
