@@ -109,21 +109,25 @@
 
   .image-1{
     margin-right: 10%;
-    @include background-image('../img/dropbox/1276207.jpg'){
-    }
+    @include background-image('../img/dropbox/1276207.jpg')
+    
   }
 
   .image-2{
     margin-left: 10%;
-    @include background-image('../img/dropbox/1276216.jpg'){
-    }
+    @include background-image('../img/dropbox/1276216.jpg')
+     
   }
 
 
   .image-4{
     margin-left: 10%;
-    @include background-image('../img/dropbox/1276189.jpg'){
+    @include background-image('../img/dropbox/1276189.jpg') 
     }
+
+  .image-5{
+    margin-right: 10%;
+    @include background-image('../img/dropbox/1276168.jpg')
   }
 
   // Mobile ============
