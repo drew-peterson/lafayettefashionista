@@ -14,7 +14,7 @@
     background-color: $prim-color !important;
 
     @include tablet {
-      background-color: $white !important;
+      background-color: $white !important; 
     }
   }
 
@@ -34,8 +34,8 @@
   }
 
 // Images =================================
-  .image-1{
-    @include background-image('../img/white-shirt.jpeg');
+  .aboutImage-1{
+    @include background-image('../img/sign2.jpeg'); 
   }
 
 // column adjustments =======================
@@ -47,10 +47,7 @@
       width: 50% !important;
     }
   }
-
 } // end of about
-
-
 // Mobile ============
   .mContainer {
     @include tablet { display: none;}
